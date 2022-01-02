@@ -12,7 +12,6 @@ class Application(models.Model):
     email = models.EmailField(unique=True)
     phone = models.CharField(max_length=10)
     companyname = models.CharField(max_length=20)
-    companylogo = models.ImageField(max_length=20,null=True)
     describtion_on_team = models.TextField(max_length=100)
     describtion_on_company = models.TextField(max_length=100)
     unique_about_solution = models.TextField(max_length=100)

@@ -24,7 +24,7 @@ class UserSerializer(serializers.ModelSerializer):
         return reg            
         
 class ApplicationSerializer(serializers.ModelSerializer):
-    companylogo = serializers.ImageField(max_length=None,use_url=True)
+    # companylogo = serializers.ImageField(max_length=None,use_url=True)
     class Meta:
         model = Application
         fields = "__all__"

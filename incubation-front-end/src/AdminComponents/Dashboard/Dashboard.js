@@ -16,8 +16,8 @@ function Dashboard() {
                     <table class="table table-dark table-striped">
                         <thead>
                             <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">First</th>
+                                <th scope="col"></th>
+                                <th scope="col"></th>
                                 <th scope="col">Last</th>
                                 <th scope="col">Handle</th>
                             </tr>

@@ -58,7 +58,7 @@ const handleLogin = (event)=>{
                                                         <TextField id="outlined-basic" label="Username" variant="outlined" fullWidth value={username} onChange={(e) =>{setUsername(e.target.value);setAlert('')} } />
                                                     </div>
                                                     <div className="col-md-10 mb-4">
-                                                            <TextField id="outlined-basic" type="password" label="Password" variant="outlined" fullWidth value={password} onChange={(e) => {setPassword(e.target.value);;setAlert('')}} />
+                                                            <TextField id="outlined-basic" type="password" label="Password" variant="outlined" fullWidth value={password} onChange={(e) => {setPassword(e.target.value);setAlert('')}} />
                                                     </div>
                                                     <div className="d-flex justify-content-center pt-3">
                                                         <button className="btn btn-outline-success btn-lg ms-2">Register</button>

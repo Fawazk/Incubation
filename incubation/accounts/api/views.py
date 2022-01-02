@@ -20,9 +20,10 @@ class Register(APIView):
         
 class ApplicationAV(APIView):
     permission_classes=[IsAuthenticated]
-    parser_classes = [MultiPartParser, FormParser]
+    # parser_classes = [MultiPartParser, FormParser]
     def post(self, request):
         print('fawaazaaa')
+        print(request.body)
         serializer = ApplicationSerializer(data=request.data)
         if serializer.is_valid():
             print('sanin')
@@ -31,7 +32,6 @@ class ApplicationAV(APIView):
         else:
             print(serializer.errors)
             return Response(serializer.errors)
-        
 class AdminApplication(APIView):
     permission_classes=[IsAdminUser]
     def get(self, request):
